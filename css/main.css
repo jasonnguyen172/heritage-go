@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body {
     color: #262626;
@@ -87,6 +87,33 @@ header > :last-child button {
     margin: 24px;
 }
 /*end header*/
+
+/*add responsive*/
+@media only screen and (max-width: 750px) {
+    header > :last-child {
+        width: 92px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header > :last-child {
+        width: 92px;
+    }
+    header > :last-child button{
+        margin: 24px;
+    }
+    header > :nth-child(2) > div {
+        margin: 24px;
+    }
+    header > :nth-child(2) img{
+        width: 100px;
+        height: auto;
+        transition: all 100ms ease-out;
+        margin: 24px;
+    }
+    body {
+        width: 100%;
+    }
+}
 
 main {
     background-color: #fafafa;
